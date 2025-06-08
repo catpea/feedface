@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.4",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "codemirror": "^6.0.1",
+    "rollup": "^4.42.0"
+  },
+  "name": "feedface",
+  "version": "1.0.0",
+  "description": "CodeMirror Web Component",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "save": "git add .; git commit -m 'Updated Release'; git push; npm version patch; npm publish; git push;",
+    "build": "node_modules/.bin/rollup editor.mjs -f iife -o editor.bundle.js -p @rollup/plugin-node-resolve"
+  },
+  "author": "@catpea",
+  "license": "GPL",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/catpea/feedface.git"
+  },
+  "bugs": {
+    "url": "https://github.com/catpea/feedface/issues"
+  },
+  "homepage": "https://github.com/catpea/feedface#readme"
+}
