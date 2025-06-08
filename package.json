@@ -7,7 +7,7 @@
     "rollup": "^4.42.0"
   },
   "name": "feedface",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CodeMirror Web Component",
   "main": "index.js",
   "scripts": {
