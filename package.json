@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@codemirror/lang-javascript": "^6.2.4",
+    "@lezer/highlight": "^1.2.1",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "codemirror": "^6.0.1",
     "rollup": "^4.42.0"
@@ -9,10 +10,9 @@
   "version": "1.0.1",
   "description": "CodeMirror Web Component",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "save": "git add .; git commit -m 'Updated Release'; git push; npm version patch; npm publish; git push;",
-    "build": "node_modules/.bin/rollup editor.mjs -f iife -o editor.bundle.js -p @rollup/plugin-node-resolve"
+    "build": "node_modules/.bin/rollup -c"
   },
   "author": "@catpea",
   "license": "GPL",
