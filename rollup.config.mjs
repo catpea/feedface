@@ -3,7 +3,7 @@ export default {
   input: "./editor.mjs",
   output: {
     name: 'feedface',
-    file: "./feedface.bundle.js",
+    file: "./feed-face.js",
     format: "iife"
   },
   plugins: [nodeResolve()]
